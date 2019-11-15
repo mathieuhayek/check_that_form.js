@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<form method="POST" action="ex2check.php" id="form" name="myformname">
+  
+
+    Prénom: <input type="text" name="firstname" id="input-firstname"> 
+    <span id="error-firstname">Le champ n'est pas valide</span> 
+
+    <br> <br>
+    Nom: <input type="text" name="lastname"><br><br>
+    E-mail: <input type="text" name="email"><br><br>
+    Age: <input type="text" name="age"><br><br>
+    Bachelor: <input type="text" name="bach"><br><br>
+    Mot de passe: <input type="password" name="password" value="password"><br><br>
+    Retapez le mot de passe: <input type="password" name="password_re"><br><br>
+    Sexe: <br>
+    <input type="radio" name="sexe" value="women"> Femme <br>
+    <input type="radio" name="sexe" value="men"> Homme <br><br>
+    Quel est votre tome préféré ? <br>
+    <input type="checkbox" name="tomes[]" value="tome1"> tome1 <br>
+    <input type="checkbox" name="tomes[]" value="tome2"> tome2 <br>
+    <input type="checkbox" name="tomes[]" value="tome3"> tome3 <br>
+    <input type="checkbox" name="tomes[]" value="tome4"> tome4 <br>
+    <input type="checkbox" name="tomes[]" value="tome5"> tome5 <br><br>
+    Un petit commentaire ? : <br>
+    <textarea name="comment"><b>mon commentaire</b></textarea><br>
+    <input type="submit" name="submit">
+  </form>
+
+  <ul id='errors'></ul>
+
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
